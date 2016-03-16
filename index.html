@@ -8,6 +8,7 @@
       body {
         background: url('download.jpg');
         margin-top: 100px;
+        margin-right: 0px;
         color: whitesmoke;
         font-family: 'Lato', 'Roboto', 'tacocat spelled backwards is tacocat', sans-serif;
       }
@@ -16,8 +17,8 @@
         text-shadow: 2px 2px 2px aqua;
         text-decoration: underline dotted aqua;
       }
-      h1, h6, li, a, small, header, main, footer {
-        background-color: rgba(255,255,255,0.3);
+      body > * {
+        background: rgba(255,255,255,0.1);
       }
       @media (min-width: 600px) {
         body {
@@ -26,10 +27,9 @@
       }
       ul {
         list-style: inside kannada;
-        counter-increment: allthesame;
       }
-      ul:first-of-type {
-        counter-reset: allthesame;
+      li.libre {
+        list-style: inside none;
       }
     </style>
   </head>
@@ -45,14 +45,10 @@
         <li>co-creator of <a href="https://chopmotto.ml">Chopmotto!!</a></li>
         <li>student at <a href="http://lo01.pl">25th best high school in the country, also best one in Lublin apparently</a></li>
         <li><a href="https://hummingbird.me/users/Michcioperz">otaku</a></li>
-      </ul>
-    </main>
-    <footer>
-      <h6>contact goes here:</h6>
-      <ul>
+        <li class="libre"></li>
         <li>email: <a href="mailto:michcioperz@gmail.com">michcioperz@gmail.com</a></li>
         <li>twitter: <a href="https://twitter.com/Michcioperz">@Michcioperz</a></li>
       </ul>
-    </footer>
+    </main>
   </body>
 </html>
